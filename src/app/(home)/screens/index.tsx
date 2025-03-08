@@ -28,8 +28,9 @@ interface Item {
 }
 
 export const ReceiptGenerator = () => {
-  const [total, setTotal] = useState(0)
   const [data, setData] = useState(initialState)
+
+  const [total, setTotal] = useState(0)
   const [items, setItems] = useState([{ name: '', quantity: 1, price: 0 }])
 
   const {
